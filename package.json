@@ -1,0 +1,20 @@
+{
+  "name": "n-dice-simulator",
+  "version": "1.0.0",
+  "description": "Projeto-base para o simulador de `n` dados. Você deve completar a parte em TypeScript, conforme orientado no enunciado do Moodle.",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "npx htmlhint src/*.html && npx stylelint src/*.css && npx eslint src/*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "htmlhint": "^1.1.4",
+    "stylelint": "^15.8.0",
+    "stylelint-config-standard": "^33.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.43.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}
