@@ -10,14 +10,15 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <title>Dice simulator</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+
 </head>
 
 <body>
+
     <head>
         <nav class="navbar navbar-expand-md bg-light">
             <div class="navbar-brand">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/2-Dice-Icon.svg/600px-2-Dice-Icon.svg.png" 
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/2-Dice-Icon.svg/600px-2-Dice-Icon.svg.png"
                     class="img-fluid" alt="logo">
                 <span class="h1">
                     N-dice simulator
@@ -29,11 +30,16 @@
     <main class="container">
 
         <div id="qty-container" class="container">
-            <h2 class="text-center">N = <span id="dice-qty"></span> </h2>
+            <h2 class="text-center">N = <span id="dice-qty">6</span> </h2>
         </div>
 
         <div id="dice-container" class="container text-center">
-            
+            <img class="dice-alter" src="/src/img/die1.png" alt="">
+            <img class="dice-alter" src="/src/img/die2.png" alt="">
+            <img class="dice-alter" src="/src/img/die3.png" alt="">
+            <img class="dice-alter" src="/src/img/die4.png" alt="">
+            <img class="dice-alter" src="/src/img/die5.png" alt="">
+            <img class="dice-alter" src="/src/img/die6.png" alt="">
         </div>
 
         <div id="form-container" class="container">
@@ -56,7 +62,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div id="table-container" class="container">
             <div class="row justify-content-center">
                 <div class="col-6">
@@ -108,10 +114,10 @@
 
     </main>
 
-    
+
 </body>
 
-
+<script src="index.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
