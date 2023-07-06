@@ -1,7 +1,5 @@
-/* eslint-disable max-len */
-/* eslint-disable no-unused-vars */
 /* eslint-disable require-jsdoc */
-/* eslint-disable valid-jsdoc */
+
 class Dado {
     /**
    * Construtor da classe Dado.
@@ -13,7 +11,7 @@ class Dado {
 
     /**
    * Retorna o valor atual da face do dado.
-   * @returns {number} O valor do dado.
+   * @return {number} O valor do dado.
    */
     get face() {
         return this._face;
@@ -55,17 +53,17 @@ botton.addEventListener('click', function() {
         todasAsJogadas.push(dados[index].face);
     });
 
-    const count1 = todasAsJogadas.filter((item) => item === lados.lado1).length;
-    const count2 = todasAsJogadas.filter((item) => item === lados.lado2).length;
-    const count3 = todasAsJogadas.filter((item) => item === lados.lado3).length;
-    const count4 = todasAsJogadas.filter((item) => item === lados.lado4).length;
-    const count5 = todasAsJogadas.filter((item) => item === lados.lado5).length;
-    const count6 = todasAsJogadas.filter((item) => item === lados.lado6).length;
+    const counts = [];
 
     for (let i = 1; i <= 6; i++) {
+        const count = todasAsJogadas.filter(
+            (item) => item === lados[`lado${i}`]).length;
+        counts.push(count);
+
         const freqs = document.querySelector(`#freq-${i}`);
-        freqs.textContent = `${eval('count' + i)}`;
+        freqs.textContent = count;
+
         const percs = document.querySelector(`#perc-${i}`);
-        percs.textContent = `${(eval('count' + i) / todasAsJogadas.length) * 100}`;
+        percs.textContent = (count / todasAsJogadas.length) * 100;
     }
 });
